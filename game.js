@@ -63,6 +63,7 @@ function animatePress(currentColour) {
 //This is the function that starts the game
 $(document).on("keydown", function () {
   if (!Start) {
+    gameReset();
     nextSequence();
     Start = true;
   }
